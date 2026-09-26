@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEONSTACK | AI Integration • Full-Stack • Chatbots | Expert Freelance Developer</title>
+  <meta name="description" content="Premium AI &amp; Full-Stack Freelance Expert. 15 ready-to-buy packages starting at $1,399. 127+ projects delivered. Fast delivery, 14-day guarantee. Book your project today.">
+  <meta name="keywords" content="AI integration freelance, full stack developer, AI chatbot development, Python automation, backend API, Next.js developer, Groq AI, LangChain, Upwork top rated">
+  <meta name="author" content="Alex Rivera">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="NEONSTACK | AI &amp; Full-Stack Expert Freelance">
+  <meta property="og:description" content="Turn your idea into production AI systems in weeks. 15 premium packages • Instant checkout • Trusted by 127+ clients.">
+  <meta property="og:image" content="https://picsum.photos/id/1015/1200/630">
+  <meta property="og:url" content="https://yourusername.github.io/neonstack">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NEONSTACK | AI &amp; Full-Stack Expert">
+  <meta name="twitter:description" content="127+ projects • Prices lowered • Live AI chatbot demo on site">
+  <meta name="twitter:image" content="https://picsum.photos/id/1015/1200/630">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourusername.github.io/neonstack">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Rivera",
+    "jobTitle": "AI & Full-Stack Freelance Expert",
+    "description": "Premium freelance developer specializing in AI integration, full-stack apps, chatbots, Python automation and backend APIs.",
+    "url": "https://yourusername.github.io/neonstack",
+    "image": "https://picsum.photos/id/64/600/700",
+    "knowsAbout": ["AI Integration", "Full-Stack Development", "LangChain", "Next.js", "FastAPI", "Python Automation"],
+    "offers": {
+      "@type": "OfferCatalog",
+      "name": "15 Premium Packages"
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .title { font-family: 'Space Grotesk', sans-serif; }
+    
+    /* NEON EFFECTS */
+    .neon-cyan { text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee, 0 0 40px #22d3ee; }
+    .neon-purple { text-shadow: 0 0 10px #c026d3, 0 0 20px #c026d3, 0 0 40px #c026d3; }
+    .neon-pink { text-shadow: 0 0 10px #ec4899, 0 0 20px #ec4899, 0 0 40px #ec4899; }
+    
+    .neon-border { 
+      box-shadow: 0 0 15px #22d3ee, inset 0 0 15px #22d3ee; 
+      transition: all 0.4s; 
+    }
+    .neon-border:hover { 
+      box-shadow: 0 0 30px #22d3ee, 0 0 60px #22d3ee, inset 0 0 30px #22d3ee; 
+    }
+    
+    @keyframes neon-flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { text-shadow: 0 0 10px #22d3ee, 0 0 20px #22d3ee, 0 0 40px #22d3ee; }
+      20%, 24%, 55% { text-shadow: none; }
+    }
+    .flicker { animation: neon-flicker 1.5s infinite alternate; }
+
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.1); }
+    .card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card:hover { transform: translateY(-20px) scale(1.03); }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/95 backdrop-blur-2xl border-b border-cyan-400/20">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-5 flex justify-between items-center gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 shrink-0 bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-3xl flex items-center justify-center text-xl font-black title neon-cyan flicker">NS</div>
+        <span class="text-xl sm:text-3xl font-bold title tracking-tighter neon-cyan">NEONSTACK</span>
+      </div>
+      <div class="hidden md:flex gap-10 text-sm font-medium">
+        <a href="#hero" class="hover:text-cyan-400 transition">Home</a>
+        <a href="#services" class="hover:text-cyan-400 transition">Packages</a>
+        <a href="#work" class="hover:text-cyan-400 transition">Work</a>
+        <a href="#trust" class="hover:text-cyan-400 transition">Proof</a>
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <button onclick="toggleCart()" class="px-4 sm:px-6 py-3 glass border border-cyan-400/30 rounded-3xl flex items-center gap-3 hover:border-cyan-400 neon-border">
+          <i class="fas fa-cart-shopping"></i> Cart <span id="cart-count" class="bg-cyan-400 text-black font-bold px-3 py-0.5 rounded-full text-xs">0</span>
+        </button>
+        <button onclick="openChat()" class="hidden sm:block px-8 py-3 bg-gradient-to-r from-cyan-400 to-purple-600 text-black font-semibold rounded-3xl neon-border">Live AI Demo</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen pt-24 relative flex items-center bg-[radial-gradient(at_bottom,#18181b_40%,#0a0a0a_100%)]">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-10">
+        <div class="inline-flex items-center gap-3 px-6 py-2.5 glass rounded-full text-sm border border-cyan-400/40">
+          <span class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
+          127 Projects • 14 Countries • Open for March 2026
+        </div>
+        <h1 class="text-5xl sm:text-7xl md:text-8xl font-bold title leading-none tracking-tighter neon-cyan flicker">
+          I BUILD<br>THE FUTURE<br>IN CODE
+        </h1>
+        <p class="text-2xl text-zinc-300">15 premium packages • Prices lowered 25% • Instant checkout • 14-day money-back guarantee</p>
+        <div class="flex flex-wrap gap-5">
+          <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})" class="px-12 py-6 bg-white text-black font-bold text-xl rounded-3xl hover:scale-105 transition neon-border">Browse Packages →</button>
+          <button onclick="toggleCart()" class="px-12 py-6 border-2 border-white/70 hover:border-white font-semibold text-xl rounded-3xl transition">View Cart</button>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://picsum.photos/id/1015/900/800" class="rounded-3xl border border-cyan-400/30 shadow-2xl" alt="Alex Rivera AI Developer">
+        <div class="absolute -bottom-6 right-6 glass p-6 rounded-3xl border border-purple-400/50">
+          <div class="flex items-center gap-4">
+            <img src="https://picsum.photos/id/64/80/80" class="w-14 h-14 rounded-2xl" alt="Alex">
+            <div>
+              <div class="font-bold text-xl">Alex Rivera</div>
+              <div class="text-cyan-400">AI &amp; Full-Stack Expert</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div id="trust" class="py-8 border-b border-zinc-800 bg-zinc-900/80">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-12 text-center text-sm">
+      <div><span class="text-cyan-400 font-bold">127+</span> Projects Delivered</div>
+      <div><span class="text-purple-400 font-bold">4.98/5</span> Average Rating</div>
+      <div><span class="text-pink-400 font-bold">14</span> Countries Served</div>
+      <div class="flex items-center gap-2"><i class="fas fa-shield-alt text-emerald-400"></i> 14-Day Money-Back</div>
+      <div>Clutch • Upwork Top Rated • Verified</div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-28 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <div class="uppercase tracking-[6px] text-xs text-cyan-400 mb-3">CHOOSE YOUR POWER LEVEL</div>
+        <h2 class="text-6xl title font-bold neon-purple">15 Premium Packages</h2>
+        <p class="text-xl text-zinc-400 mt-4">25% lower prices • Real results • Instant buy</p>
+      </div>
+      <!-- 5 categories x 3 tiers = 15 packages, rendered from PACKAGES in the script below -->
+      <div id="services-grid" class="grid md:grid-cols-3 lg:grid-cols-5 gap-8"></div>
+      <p class="text-center text-zinc-500 mt-12">Click a category to see its three packages and add one to your cart.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS + PROOF -->
+  <section class="py-28 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl title font-bold text-center mb-16">What My Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass p-8 rounded-3xl">
+          <div class="text-6xl mb-6">“</div>
+          <p class="text-lg">"Alex built our AI chatbot in 9 days. It already saved us 40 hours/week and increased leads by 62%."</p>
+          <div class="mt-8 flex items-center gap-4">
+            <img src="https://picsum.photos/id/201/60/60" class="rounded-full">
+            <div>
+              <div class="font-semibold">Sarah Chen</div>
+              <div class="text-sm text-zinc-400">CTO @ScaleFlow • San Francisco</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO + WHAT I CAN CREATE -->
+  <section id="work" class="py-28 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl title font-bold mb-12">Things I Can Create For You</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card glass rounded-3xl p-8 hover:border-cyan-400 neon-border">
+          <div class="text-5xl mb-6">🧠</div>
+          <h3 class="text-2xl title font-bold mb-3">RAG Knowledge Assistants</h3>
+          <p class="text-zinc-400">Chat over your docs, tickets and wikis with cited answers.</p>
+        </div>
+        <div class="card glass rounded-3xl p-8 hover:border-cyan-400 neon-border">
+          <div class="text-5xl mb-6">💬</div>
+          <h3 class="text-2xl title font-bold mb-3">Support &amp; Sales Chatbots</h3>
+          <p class="text-zinc-400">Website and WhatsApp bots that qualify leads and hand off to humans.</p>
+        </div>
+        <div class="card glass rounded-3xl p-8 hover:border-cyan-400 neon-border">
+          <div class="text-5xl mb-6">🚀</div>
+          <h3 class="text-2xl title font-bold mb-3">SaaS MVPs</h3>
+          <p class="text-zinc-400">Next.js apps with auth, payments, dashboards and a Postgres backend.</p>
+        </div>
+        <div class="card glass rounded-3xl p-8 hover:border-cyan-400 neon-border">
+          <div class="text-5xl mb-6">🕸️</div>
+          <h3 class="text-2xl title font-bold mb-3">AI Agents &amp; Workflows</h3>
+          <p class="text-zinc-400">Multi-step agents that research, draft and act through your tools.</p>
+        </div>
+        <div class="card glass rounded-3xl p-8 hover:border-cyan-400 neon-border">
+          <div class="text-5xl mb-6">⚙️</div>
+          <h3 class="text-2xl title font-bold mb-3">Python Automation</h3>
+          <p class="text-zinc-400">Scrapers, report generators and scheduled jobs that remove busywork.</p>
+        </div>
+        <div class="card glass rounded-3xl p-8 hover:border-cyan-400 neon-border">
+          <div class="text-5xl mb-6">🔌</div>
+          <h3 class="text-2xl title font-bold mb-3">APIs &amp; Integrations</h3>
+          <p class="text-zinc-400">FastAPI and Node services that connect CRMs, payments and data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT + GUARANTEE -->
+  <section id="about" class="py-28">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+      <div>
+        <div class="uppercase tracking-[6px] text-xs text-cyan-400 mb-3">HOW IT WORKS</div>
+        <h2 class="text-5xl title font-bold mb-10 neon-purple">From Idea To Production</h2>
+        <ol class="space-y-6 text-lg">
+          <li class="flex gap-5"><span class="text-cyan-400 font-bold title text-2xl">01</span><span><b>Pick a package</b> and add it to your cart.</span></li>
+          <li class="flex gap-5"><span class="text-purple-400 font-bold title text-2xl">02</span><span><b>Scope call</b> within 24 hours to confirm goals and timeline.</span></li>
+          <li class="flex gap-5"><span class="text-pink-400 font-bold title text-2xl">03</span><span><b>Build in the open</b> with progress demos along the way.</span></li>
+          <li class="flex gap-5"><span class="text-emerald-400 font-bold title text-2xl">04</span><span><b>Launch and hand-off</b> with docs and post-launch support.</span></li>
+        </ol>
+      </div>
+      <div class="glass rounded-3xl p-10 border border-emerald-400/40">
+        <i class="fas fa-shield-alt text-5xl text-emerald-400 mb-6"></i>
+        <h3 class="text-3xl title font-bold mb-4">14-Day Money-Back Guarantee</h3>
+        <p class="text-zinc-300 text-lg">If the first milestone isn't what we agreed within 14 days of kickoff, you get a full refund. No lock-in, and you own all the code.</p>
+        <button onclick="openChat()" class="mt-8 px-8 py-4 bg-gradient-to-r from-cyan-400 to-purple-600 text-black font-semibold rounded-3xl neon-border">Ask the AI Demo a Question</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE MODAL -->
+  <div id="service-modal" class="hidden fixed inset-0 z-[60] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="if(event.target===this)closeService()">
+    <div class="bg-zinc-950 border border-cyan-400/40 rounded-3xl w-full max-w-5xl max-h-[90vh] overflow-y-auto p-8 md:p-10 relative">
+      <button onclick="closeService()" class="absolute top-6 right-6 text-zinc-400 hover:text-white text-2xl" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <div id="service-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- CART DRAWER -->
+  <div id="cart-overlay" class="hidden fixed inset-0 z-[60] bg-black/70" onclick="toggleCart(false)"></div>
+  <aside id="cart-drawer" class="fixed top-0 right-0 z-[70] h-full w-full max-w-md bg-zinc-950 border-l border-cyan-400/30 translate-x-full transition-transform duration-300 flex flex-col" aria-label="Cart">
+    <div class="flex justify-between items-center p-6 border-b border-zinc-800">
+      <h3 class="text-2xl title font-bold neon-cyan">Your Cart</h3>
+      <button onclick="toggleCart(false)" class="text-zinc-400 hover:text-white text-2xl" aria-label="Close cart"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4"></div>
+    <div class="p-6 border-t border-zinc-800 space-y-4">
+      <div class="flex justify-between text-xl"><span>Total</span><span id="cart-total" class="font-bold text-cyan-400">$0</span></div>
+      <button id="checkout-btn" onclick="checkout()" class="w-full py-4 bg-gradient-to-r from-cyan-400 to-purple-600 text-black font-bold rounded-3xl disabled:opacity-40 disabled:cursor-not-allowed">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkout-modal" class="hidden fixed inset-0 z-[80] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="if(event.target===this)closeCheckout()">
+    <form id="checkout-form" class="bg-zinc-950 border border-purple-400/50 rounded-3xl w-full max-w-lg p-8 space-y-5 relative">
+      <button type="button" onclick="closeCheckout()" class="absolute top-6 right-6 text-zinc-400 hover:text-white text-2xl" aria-label="Close"><i class="fas fa-xmark"></i></button>
+      <h3 class="text-3xl title font-bold neon-purple">Checkout</h3>
+      <div id="checkout-summary" class="text-zinc-300 text-sm space-y-1"></div>
+      <input name="name" required placeholder="Your name" class="w-full bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none rounded-2xl px-5 py-3">
+      <input name="email" type="email" required placeholder="Email" class="w-full bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none rounded-2xl px-5 py-3">
+      <textarea name="notes" rows="3" placeholder="Tell me about your project (optional)" class="w-full bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none rounded-2xl px-5 py-3"></textarea>
+      <button type="submit" class="w-full py-4 bg-white text-black font-bold rounded-3xl neon-border">Place Order</button>
+    </form>
+  </div>
+
+  <!-- SUCCESS MODAL -->
+  <div id="success-modal" class="hidden fixed inset-0 z-[80] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4" onclick="if(event.target===this)closeSuccess()">
+    <div class="bg-zinc-950 border border-emerald-400/50 rounded-3xl w-full max-w-lg p-10 text-center">
+      <div class="text-7xl mb-6">✅</div>
+      <h3 class="text-3xl title font-bold mb-3">Order Placed!</h3>
+      <p id="success-text" class="text-zinc-300"></p>
+      <button onclick="closeSuccess()" class="mt-8 px-10 py-4 bg-gradient-to-r from-cyan-400 to-purple-600 text-black font-bold rounded-3xl">Done</button>
+    </div>
+  </div>
+
+  <!-- FLOATING CHAT -->
+  <button id="chat-fab" onclick="openChat()" class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-purple-600 text-black text-2xl neon-border" aria-label="Open AI demo chat"><i class="fas fa-robot"></i></button>
+  <div id="chat-panel" class="hidden fixed bottom-6 right-6 z-[65] w-[calc(100%-3rem)] max-w-sm h-[520px] max-h-[80vh] bg-zinc-950 border border-cyan-400/40 rounded-3xl flex flex-col overflow-hidden shadow-2xl">
+    <div class="flex justify-between items-center px-5 py-4 bg-gradient-to-r from-cyan-400/20 to-purple-600/20 border-b border-zinc-800">
+      <div class="flex items-center gap-3">
+        <span class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
+        <span class="font-bold title">NEONSTACK AI Demo</span>
+      </div>
+      <button onclick="closeChat()" class="text-zinc-400 hover:text-white text-xl" aria-label="Close chat"><i class="fas fa-xmark"></i></button>
+    </div>
+    <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 text-sm"></div>
+    <div id="chat-chips" class="px-4 pb-2 flex gap-2 text-xs overflow-x-auto whitespace-nowrap"></div>
+    <form id="chat-form" class="p-3 border-t border-zinc-800 flex gap-2">
+      <input id="chat-input" autocomplete="off" placeholder="Ask about packages, prices, timelines…" class="flex-1 bg-zinc-900 border border-zinc-700 focus:border-cyan-400 outline-none rounded-2xl px-4 py-2">
+      <button class="px-4 rounded-2xl bg-cyan-400 text-black" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="hidden fixed bottom-28 left-1/2 -translate-x-1/2 z-[90] glass px-6 py-3 rounded-2xl border border-cyan-400/50"></div>
+
+  <footer class="bg-black py-16 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
+      © 2026 NEONSTACK • Alex Rivera • All Rights Reserved • <a href="#" class="hover:text-cyan-400">Privacy</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
